@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Calculate Electricity Bill</title>
-</head>
-<body>
-	<h1>See output in console</h1>
-	
-</body>
-<script src="index.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Calculate Electricity Bill</title>
+  </head>
+  <body>
+    <h1 class="text-xl ml-2 font-semibold">
+      Q. Calculate Electricity Bill as per below Rule
+    </h1>
+    <table class="table-auto border ml-2 mt-4">
+      <thead>
+        <tr class="border p-1 text-center">
+          <th class="border p-1 text-center">Sr</th>
+          <th class="border p-1 text-center">Unit</th>
+          <th class="border p-1 text-center">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border p-1 text-center">
+          <td class="border p-1 text-center">1</td>
+          <td class="border p-1 text-center">upto 100</td>
+          <td class="border p-1 text-center">4.2 Rs</td>
+        </tr>
+
+        <tr class="border p-1 text-center">
+          <td class="border p-1 text-center">2</td>
+          <td class="border p-1 text-center">101-200</td>
+          <td class="border p-1 text-center">6 Rs</td>
+        </tr>
+        <tr class="border p-1 text-center">
+          <td class="border p-1 text-center">3</td>
+          <td class="border p-1 text-center">201-400</td>
+          <td class="border p-1 text-center">8 Rs</td>
+        </tr>
+        <tr class="border p-1 text-center">
+          <td class="border p-1 text-center">4</td>
+          <td class="border p-1 text-center">More than 400</td>
+          <td class="border p-1 text-center">13 Rs</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div id="result"></div>
+  </body>
+  <script src="index.js"></script>
 </html>
